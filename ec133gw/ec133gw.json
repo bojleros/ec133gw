@@ -1,0 +1,18 @@
+{
+  "RtuMaster":{
+    "serial": {
+      "port": "/dev/ttyS0",
+      "baudrate": 19200,
+      "bytesize": 8,
+      "parity": "N",
+      "stopbits": 1,
+      "xonxoff": 0
+    },
+    "timeout": "0.2"
+  },
+  "listen": {
+    "host": "0.0.0.0",
+    "port": 80
+  },
+  "ec133": 1
+}
