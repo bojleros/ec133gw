@@ -33,7 +33,8 @@ def set_light(c,b,i=0):
   while i<3:
     try:
       #rs.write_register(c,b,0)
-      conf['rtu'].execute(conf['ec133'], cst.WRITE_SINGLE_REGISTER, c, output_value=b)
+      #conf['rtu'].execute(conf['ec133'], cst.WRITE_SINGLE_REGISTER, c, output_value=b)
+      conf['rtu'].execute(conf['ec133'], cst.WRITE_MULTIPLE_REGISTERS, c, output_value=[b])
     except Exception as e:
       print(str(e))
       time.sleep(float(conf['RtuMaster']['timeout']))
