@@ -1,7 +1,7 @@
 {
   "RtuMaster":{
     "serial": {
-      "port": "/dev/ttyS0",
+      "port": "/dev/ttyUSB0",
       "baudrate": 19200,
       "bytesize": 8,
       "parity": "N",
